@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #pp
+        {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+            background-color: rgb(31, 255, 203);
+            height: 30rem;
+            width: 50rem;
+            margin: 10rem auto;
+        }
+        h1{
+            text-align: center;
+        }
+        #u
+        {
+width: 80px;
+background-color: none;
+
+        }
+        #p
+        {
+width: 80px;
+
+        }
+        #pp1
+        {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            height: 30rem;
+            justify-content: space-evenly;
+            
+        }
+        #user
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 500px;
+        }
+        #pass
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 500px;
+
+        }
+        #log
+        {
+            display: flex;
+            width: 500px;
+            justify-content: space-evenly;
+            align-items: center;
+
+        }
+        #i1
+        {
+            width: 300px;
+            height: 40px;
+            border: none;
+            outline: none;
+            font-size: 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        }
+        #i2
+        {
+            width: 300px;
+            height: 40px;
+            border: none;
+            outline: none;
+            font-size: 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+        }
+        #l1
+        {
+            width: 80px;
+
+            
+        }
+        #l2
+        {
+            width: 300px;
+            height: 40px;
+            border: none;
+            background-color: white;
+            color: rgb(3, 147, 99);
+            font-size: 30px;
+            font-weight: bold;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+        }
+        #pass1
+        {
+            display: flex;
+            flex-direction: column;
+        }
+        #user1
+        {
+            display: flex;
+            flex-direction: column;
+        }
+        p{
+            margin-top: 1rem;
+            color: red;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        @media screen and (max-width:900px) and (min-width:600px){
+            #pp
+        {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+            background-color: rgb(31, 255, 203);
+            height: 30rem;
+            width: 30rem;
+            margin: 10rem auto;
+        }
+        }
+        @media screen and (max-width:600px) and (min-width:400px){
+            #pp
+        {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+            background-color: rgb(31, 255, 203);
+            height: 30rem;
+            width: 20rem;
+            margin: 10rem auto;
+        }
+        #u
+        {
+width: 50px;
+background-color: none;
+
+        }
+        #p
+        {
+width: 50px;
+
+        }
+        #l1
+        {
+            width: 50px;
+        }
+        #user
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 300px;
+        }
+        #pass
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 300px;
+
+        }
+        #log
+        {
+            display: flex;
+            width: 300px;
+            justify-content: space-evenly;
+            align-items: center;
+
+        }
+        #i1
+        {
+            width: 200px;
+            height: 40px;
+            border: none;
+            outline: none;
+            font-size: 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        }
+        #i2
+        {
+            width: 200px;
+            height: 40px;
+            border: none;
+            outline: none;
+            font-size: 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+        }
+        #l2
+        {
+            width: 200px;
+            height: 40px;
+            border: none;
+            background-color: white;
+            color: rgb(3, 147, 99);
+            font-size: 30px;
+            font-weight: bold;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        }
+        @media screen and (max-width:400px) and (min-width:200px){
+            #pp
+        {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+            background-color: rgb(31, 255, 203);
+            height: 40rem;
+            width: 100%;
+            margin: 10rem auto;
+        }
+        #pp1
+        {
+            height: 40rem;
+            width: 100%;
+        }
+        #u
+        {
+width: 80px;
+background-color: none;
+
+        }
+        #p
+        {
+width: 80px;
+
+        }
+        #l1
+        {
+            width: 50px;
+        }
+        #user
+        {
+            width: 200px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 150px;
+        }
+        #pass
+        {
+            width: 200px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            height: 150px;
+
+            justify-content: space-evenly;
+
+        }
+        #log
+        {
+            width: 200px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            height: 150px;
+
+            align-items: center;
+
+        }
+        #i1
+        {
+            width: 200px;
+            height: 40px;
+            border: none;
+            outline: none;
+            font-size: 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        }
+        #i2
+        {
+            width: 200px;
+            height: 40px;
+            border: none;
+            outline: none;
+            font-size: 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+        }
+        #l2
+        {
+            width: 200px;
+            height: 40px;
+            border: none;
+            background-color: white;
+            color: rgb(3, 147, 99);
+            font-size: 30px;
+            font-weight: bold;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        }
+
+    </style>
+</head>
+<body>
+    
+<form>
+    <div id="pp">
+<h1>User login</h1>
+<div id="pp1">
+<div id="user1">
+    <div id="user">
+<img src="https://cdn-icons-png.flaticon.com/128/7542/7542296.png" id="u">
+<input type="text" id="i1">
+</div>
+<div>
+<p id="p1"></p>
+</div>
+</div>
+<div id="pass1">
+    <div id="pass">
+    <img src="https://cdn-icons-png.flaticon.com/128/5249/5249849.png" id="p">
+<input type="number" id="i2">
+</div>
+<div>
+<p id="p2"></p>
+</div>
+</div>
+<div id="log">
+<img src="https://cdn-icons-png.flaticon.com/128/1828/1828391.png" id="l1">
+<button id="l2">Login</button>
+</div>
+</div>
+    </div>
+</form>
+<script>
+    let a=document.getElementById('i1');
+    let b=document.getElementById('i2');
+let c=document.getElementById('l2');
+let p1=document.getElementById('p1');
+let p2=document.getElementById('p2');
+let n1=0;
+let n2=0;
+a.addEventListener('input',function()
+{
+n1=this.value;
+console.log(n1.length);
+if(n1.length>0)
+{
+    p1.innerHTML="";
+
+}
+});
+b.addEventListener('input',function()
+{
+    n2=this.value;
+    if(n2.length>0)
+    {
+        p2.innerHTML="";
+    }
+})
+c.addEventListener('click',function(e)
+{
+    e.preventDefault();
+    if(n1==0)
+{
+    p1.innerText='username is empty  !!';
+}
+else if(n1.length<4)
+{
+p1.innerHTML='username must be of 4 char'
+}
+if(n2==0)
+{
+    p2.innerText='password is empty  !!';
+
+}
+
+if(n1.length>=4&&n2.length>0)
+{
+    alert('login sucessfully');
+  a.value="";
+  b.value="";
+  n1=0;
+  n2=0;
+}
+else 
+{
+    alert('login failed');
+    n1=0;
+    n2=0;
+}
+})
+
+
+</script>
+    
+</body>
+</html>
